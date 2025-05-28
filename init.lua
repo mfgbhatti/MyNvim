@@ -227,29 +227,20 @@ require("lazy").setup {
           emmet_ls = {
             filetypes = {
               "css",
-              "eruby",
               "html",
               "javascript",
-              "javascriptreact",
-              "less",
-              "sass",
               "scss",
               "pug",
-              "typescriptreact",
+              "typescript",
             },
           },
           emmet_language_server = {
             filetypes = {
               "css",
-              "eruby",
               "html",
               "javascript",
-              "javascriptreact",
-              "less",
               "sass",
-              "scss",
               "pug",
-              "typescriptreact",
             },
           },
           -- alias for yaml-language-server
