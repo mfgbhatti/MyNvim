@@ -93,7 +93,7 @@ require("lazy").setup {
         vim.cmd.colorscheme "tokyonight-night"
       end,
     },
-    {
+    { -- [[ LSP Start here ]] --
       "folke/lazydev.nvim",
       ft = "lua",
       opts = {
@@ -279,7 +279,7 @@ require("lazy").setup {
         require("mason-tool-installer").setup { ensure_installed = ensure_installed }
 
         require("mason-lspconfig").setup {
-          ensure_installed = {}, -- explicitly set to an empty, only installs via mason-tool-installer)
+          ensure_installed = {}, -- explicitly set to an empty, only installs via mason-tool-installer
           automatic_installation = false,
           handlers = {
             function(server_name)
