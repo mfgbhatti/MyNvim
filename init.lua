@@ -106,13 +106,21 @@ require("lazy").setup {
       -- [[ Main LSP Configuration ]] --
       "neovim/nvim-lspconfig",
       dependencies = {
-
-        { "mason-org/mason.nvim", opts = {} },
+        {
+          "mason-org/mason.nvim",
+          opts = {
+            ui = {
+              icons = {
+                package_installed = "✓",
+                package_pending = "➜",
+                package_uninstalled = "✗",
+              },
+            },
+          },
+        },
         "mason-org/mason-lspconfig.nvim",
         "WhoIsSethDaniel/mason-tool-installer.nvim",
-
         { "j-hui/fidget.nvim", opts = {} },
-
         "saghen/blink.cmp",
       },
       config = function()
