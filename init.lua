@@ -325,6 +325,7 @@ require("lazy").setup {
           yaml = { "yamlfmt" },
           bash = { "shfmt" },
           javascript = { "prettierd", "prettier", stop_after_first = true },
+          typescript = { "prettierd", "prettier", stop_after_first = true },
           html = { "prettierd" },
           css = { "prettierd" },
         },
